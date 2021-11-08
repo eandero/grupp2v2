@@ -1,3 +1,6 @@
+nav {
+  box-shadow: 3px 3px 3px 1px lightgrey;
+}
 nav ul {
   margin: 10;
   padding: 10;

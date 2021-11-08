@@ -9,25 +9,27 @@ $color-black: black;
 $color-white: white;
 
 nav {
+    box-shadow: 3px 3px 3px 1px lightgrey;
+
   ul {
-margin: 10;
-padding: 10;
-list-style: none;
-background-color: $color-white;
-overflow: auto;
-  display: flex;
-  position: sticky;
-}
+    margin: 10;
+    padding: 10;
+    list-style: none;
+    background-color: $color-white;
+    overflow: auto;
+    display: flex;
+    position: sticky;
+  }
 
-li {
-display: inline-block;
-}
+  li {
+    display: inline-block;
+  }
 
-a {
-display: block;
-padding: 10px 10px 10px 10px;
-text-decoration: none;
-font-style: normal;
-color: Black;
-}
+  a {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-style: normal;
+    color: Black;
+  }
 }
