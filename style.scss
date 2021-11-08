@@ -9,11 +9,14 @@ $color-black: black;
 $color-white: white;
 
 nav {
-  li {
+  ul {
 margin: 10;
 padding: 10;
 list-style: none;
 background-color: $color-white;
+overflow: auto;
+  display: flex;
+  position: sticky;
 }
 
 li {
@@ -22,7 +25,7 @@ display: inline-block;
 
 a {
 display: block;
-padding: 20px 20px;
+padding: 10px 10px 10px 10px;
 text-decoration: none;
 font-style: normal;
 color: Black;
