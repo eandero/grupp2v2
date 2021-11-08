@@ -5,5 +5,9 @@ nav {
 #logotype {
 	color: #3766a1;
 	font-size: 32px;
-	margin-right: 40px;
+	margin-right: 100px;
+}
+
+#searchbar {
+	margin-right: 100px;
 }
