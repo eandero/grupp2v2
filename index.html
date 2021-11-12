@@ -47,7 +47,7 @@
             <form class="form-inline my-2 my-lg-0" id="searchbar">
               <div class="form-group has-search">
               <span class="fa fa-search form-control-feedback"></span>
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <input id="searchinput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <!--- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
               </div>
               </form>
@@ -69,68 +69,97 @@
 
         <!-- Articles-->
         <section class="row">
-          <section class="col-sm-1"> </section>
+          <section class="col-sm-2"> </section>
 
           <!-- Big article -->
-          <article class="col-sm-6">
+          <article class="col-sm-5 articleContainer">
             <img src="pic/EbbaNy.svg" width="100%" height="auto">
-            <p> Stor artikel </p>
+            <article class="image-text-lm">
+              <p>PUBLICERAD: MINDRE ÄN 2 TIM SEDAN </p>
+              <h3>Busch ryter ifrån om hustvisten: "Inte upp till Sveriges Radio att avgöra"</h3>
+              <p>Hustvisten mellan Ebba Busch och Esbjörn Bolin blossade återigen upp i veckan när Bolin överklagade fallet. 
+
+                I en intervju med P1 Morgon fick Busch frågan om hon övervägt att lägga ner allt och köpa ett annat hus. 
+                <br>
+                Då röt KD-ledaren ifrån. 
+                <br>
+                – Det är väl inte Sveriges Radios uppgift att avgöra vad som är en rimlig åtgärd? säger Ebba Busch.</p>
+              </article>
           </article>
           <!-- /Big article -->
 
           <!-- Medium article -->
-          <section class="col-sm-4">
-            <article>
+          <section class="col-sm-3">
+            <article class="articleContainer">
               <img src="pic/covidNy.svg" width="100%" height="auto">
-              <p> Mellan artikel </p>  
+              <article class="image-text-lm">
+                <p>Publicerad: 08:16 - 12 nov, 2021 </p>
+                <h3>Nederländerna inför ”halv lockdown”</h3>
+                <p>Nya strikta restriktioner införs i Nederländerna efter den ökade smittspridningen i landet. Från och med lördag tvingas alla barer, restauranger och icke-livsviktiga verksamheter att stänga vid 19. </p>
+              </article>  
             </article>
           <!-- /Medium article -->
 
           <!-- Small article 1 -->
             <section class="row">
-              <article class="col-sm-12">
+              <article class="col-sm-12 articleContainer">
                 <img src="pic/blabarspajNy.svg" width="100%" height="auto">
-                <p> Liten artikel </p>
+                <section class="image-text-s">
+                  <p>Datum</p>
+                  <h3>Heading</h3>
+                  <p>Content</p>
+                </section>
               </article>
             </section>
           <!-- /Small article 1 -->
 
           <!-- Small article 2 -->
             <section class="row">
-              <article class="col-sm-12">
+              <article class="col-sm-12 articleContainer">
                 <img src="pic/grytaNy.svg" width="100%" height="auto">
-                <p> Liten artikel </p>
+                <section class="image-text-s">
+                  <p>Datum</p>
+                  <h3>Heading</h3>
+                  <p>Content</p>
+                </section>
               </article>
             </section>
           </section>
           <!-- /Small article 2 -->
 
-          <section class="col-sm-1"></section>
+          <section class="col-sm-2"></section>
           </section>
         <!-- /Articles-->
 
         <!-- Horizontal line row -->
         <section class="row">
-          <section class="col-sm-1"></section>
-          <section class="col-sm-10 p-0">
+          <section class="col-sm-2"></section>
+          <section class="col-sm-8 p-0">
             <hr>
           </section>
-          <section class="col-sm-1"></section>
+          <section class="col-sm-2"></section>
         </section>
         <!-- /Horizontal line row -->
 
         <!-- Foodora ad section -->
         <section class="row">
-          <section class="col-sm-1"></section>
-          <section class="col-sm-10">
-            <!-- Foodora ad -->
+          <section class="col-sm-2"></section>
+          <section id="bannerAd" class="col-sm-8">
+            <!-- the img tag under is manipulated with the adchange.js script -->
+            <img src="pic/delta3.png" width="100%" height="auto">
           </section>
-          <section class="col-sm-1"></section>
+          <section class="col-sm-2"></section>
         </section>
         <!-- /Foodora ad section -->
 
       </section>
-      <!-- Optional JavaScript -->
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="script/adchange.js"></script>
+  <!-- /Javascript -->
+
+
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
