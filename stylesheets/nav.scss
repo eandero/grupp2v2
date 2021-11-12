@@ -54,6 +54,11 @@ nav {
 	margin-right: 10%;
 }
 
+#searchinput {
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
 /* Changed the breakpoint (for now) to 990 because that's when
 the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
 /*@media only screen and (max-width: 768px) {*/
@@ -66,7 +71,9 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
 
 .has-search .form-control {
 padding-left: 2.375rem;
-}.has-search .form-control-feedback {
+}
+
+.has-search .form-control-feedback {
 position: absolute;
 z-index: 2;
 display: block;
