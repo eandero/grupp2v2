@@ -1,13 +1,13 @@
-.image-text-lm {
+.articleContainer {
   position: relative;
-  max-width: 100%;
   margin: 0 auto;
 }
 
 .image-text-lm {
   position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
+  max-width: 95%;
+  top: 22%;
+//  bottom: 0;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   width: 100%;

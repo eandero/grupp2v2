@@ -77,17 +77,15 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
   background-size: cover;*/
 }
 
-.image-text-lm {
+.articleContainer {
   position: relative;
-  max-width: 100%;
   margin: 0 auto;
 }
 
 .image-text-lm {
   position: absolute;
-  bottom: 0;
-  background: black;
-  /* Fallback color */
+  max-width: 95%;
+  top: 22%;
   background: rgba(0, 0, 0, 0.5);
   /* Black background with 0.5 opacity */
   color: #f1f1f1;
