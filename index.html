@@ -18,8 +18,8 @@
           <!-- Logotype -->
 
             <a class="navbar-brand" id="logotype" href="#">Logotype</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button id="hamburgerbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span id="buttonicon" class="navbar-toggler-icon"></span>
             </button>
 
           <!-- /Logotype -->
@@ -153,6 +153,31 @@
         <!-- /Foodora ad section -->
 
       </section>
+
+      <script>
+
+      var togglefun = true;
+
+      function toggleHamburger() {
+        var element = document.getElementById("buttonicon");
+
+
+        if(togglefun){
+          element.classList.remove("navbar-toggler-icon");
+          element.classList.add("closeicon");
+          togglefun = false;
+        } else {
+          element.classList.remove("closeicon");
+          element.classList.add("navbar-toggler-icon");
+          togglefun = true;
+        }
+
+      }
+
+      var myButton = document.getElementById("hamburgerbutton");
+
+      myButton.addEventListener("click", toggleHamburger);
+      </script>
 
   <!-- Javascript -->
   <script type="text/javascript" src="script/adchange.js"></script>
