@@ -42,9 +42,9 @@ nav {
 }
 
 #logotype {
+  position: absolute;
   color: #3766a1;
   font-size: 28px;
-  margin-right: 5%;
   margin-left: 25px;
 }
 
@@ -58,7 +58,7 @@ nav {
 }
 
 #searchbar {
-  margin-right: 20%;
+  margin-right: 17%;
 }
 
 #searchinput {

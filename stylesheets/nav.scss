@@ -43,10 +43,10 @@ nav {
 }
 
 #logotype {
+	position: absolute;
 	color: #3766a1;
 	font-size: 28px;
 	//margin-right: 90px;
-	margin-right: 5%;
 	margin-left: 25px;
 }
 
@@ -62,7 +62,7 @@ nav {
 #searchbar {
 	//margin-right: 210px;
 	//Changed the margin-right to percentage to match the bootstrap responsiveness
-	margin-right: 20%;
+	margin-right: 17%;
 }
 
 #searchinput {
