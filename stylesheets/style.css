@@ -43,12 +43,23 @@ nav {
 
 #logotype {
   color: #3766a1;
-  font-size: 32px;
-  margin-right: 90px;
+  font-size: 28px;
+  margin-right: 5%;
+  margin-left: 25px;
+}
+
+.nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #searchbar {
-  margin-right: 210px;
+  margin-right: 10%;
+}
+
+#searchinput {
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
 /* Changed the breakpoint (for now) to 990 because that's when

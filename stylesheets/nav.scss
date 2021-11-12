@@ -44,12 +44,26 @@ nav {
 
 #logotype {
 	color: #3766a1;
-	font-size: 32px;
-	margin-right: 90px;
+	font-size: 28px;
+	//margin-right: 90px;
+	margin-right: 5%;
+	margin-left: 25px;
+}
+
+.nav-item {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #searchbar {
-	margin-right: 210px;
+	//margin-right: 210px;
+	//Changed the margin-right to percentage to match the bootstrap responsiveness
+	margin-right: 10%;
+}
+
+#searchinput {
+	border: 1px solid black;
+	border-radius: 15px;
 }
 
 /* Changed the breakpoint (for now) to 990 because that's when
@@ -64,7 +78,9 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
 
 .has-search .form-control {
 padding-left: 2.375rem;
-}.has-search .form-control-feedback {
+}
+
+.has-search .form-control-feedback {
 position: absolute;
 z-index: 2;
 display: block;
