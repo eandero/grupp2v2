@@ -49,7 +49,7 @@ nav {
 }
 
 #menulinks {
-  margin-left: 20%;
+  margin-left: 16%;
 }
 
 .nav-item {
@@ -73,6 +73,15 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
   /* For mobile phones: */
   #searchbar {
     display: none;
+  }
+
+  #logotype {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  #menulinks {
+    margin-left: 0px;
   }
 }
 .has-search .form-control {
