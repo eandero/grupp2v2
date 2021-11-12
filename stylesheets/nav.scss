@@ -44,8 +44,15 @@ nav {
 
 #logotype {
 	color: #3766a1;
-	font-size: 32px;
-	margin-right: 90px;
+	font-size: 28px;
+	//margin-right: 90px;
+	margin-right: 5%;
+	margin-left: 25px;
+}
+
+.nav-item {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #searchbar {
