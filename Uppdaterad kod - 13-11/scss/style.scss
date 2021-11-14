@@ -1,0 +1,52 @@
+
+/*
+Andra filer som skall med
+*/
+@use "nav";
+@use "main";
+@use "articles";
+@use "footer";
+
+// Settings, global
+html,
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    margin: 1em auto;
+}
+
+// Settnigs, typografi
+body,
+sup {
+    font-size: 11px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

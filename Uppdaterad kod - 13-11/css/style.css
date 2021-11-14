@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/* Fanny & Emma styling
+
+// Font
+$font-size-1: 18px;
+$font-size-2: 15px;
+$font-size-3: 12px;
+
+// Colors
+$color-blue: #427C9E;
+$color-black: black;
+$color-white: white;
+
+nav {
+    box-shadow: 3px 3px 3px 1px lightgrey;
+
+  ul {
+    margin: 10;
+    padding: 10;
+    list-style: none;
+    background-color: $color-white;
+    overflow: auto;
+    display: flex;
+    position: sticky;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-style: normal;
+    color: Black;
+  }
+}
+*/
+nav {
+  box-shadow: 0px 3px 5px #888888;
+}
+
+#logotype {
+  color: #3766a1;
+  font-size: 28px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.nav-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-item .nav-link {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 16px;
+  transition: all 250ms ease;
+}
+@media screen and (max-width: 990px) {
+  .nav-item .nav-link {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.navbar-toggler {
+  margin-right: 5%;
+}
+
+#searchbar {
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+#searchinput {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+/* Changed the breakpoint (for now) to 990 because that's when
+the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: 990px) {
+  /* For mobile phones: */
+  #searchbar {
+    display: none !important;
+  }
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  /*background-image: url("searchicon.png");
+  background-size: cover;*/
+}
+
+/*
+    Inställningar för main
+*/
+main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*
+    Aartikel sektioner
+*/
+@media screen and (max-width: 768px) {
+  .article-section-small {
+    margin-top: 0.75em;
+  }
+}
+
+/*
+    Artiklar
+*/
+article + article {
+  margin-top: 0.75em;
+}
+article a,
+article a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+article figure {
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+article img {
+  transition: all 250ms ease;
+  width: 100%;
+  height: auto;
+}
+article figcaption {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+article:hover img {
+  opacity: 0.9;
+}
+
+/*
+    Inställningar för artiklar med text overlay
+*/
+article.article-with-text-overlay {
+  /*
+      Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller 
+      en sk figcaption, så lägger vi figcaption över bilden. Och artikeln måste ha klassen `article-with-text-overlay` för att detta skall funka :)
+  */
+}
+article.article-with-text-overlay figure img {
+  min-height: 240px;
+  object-fit: cover;
+}
+article.article-with-text-overlay figure figcaption {
+  transition: all 250ms ease;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+}
+article.article-with-text-overlay figure figcaption::after {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  content: "";
+  display: block;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+}
+article.article-with-text-overlay:hover figcaption {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black background with 0.6 opacity */
+}
+
+/*
+    Inställningar för footer
+*/
+footer {
+  padding: 20px;
+  text-align: right;
+}
+footer sup {
+  font-size: 14px;
+}
+footer sup::after {
+  width: 10px;
+  text-align: center;
+  content: "🍻";
+  display: inline-block;
+  animation: emojiiiiisss 6969ms infinite;
+}
+
+@keyframes emojiiiiisss {
+  0% {
+    content: "🍻";
+  }
+  20% {
+    content: "☃️";
+  }
+  40% {
+    content: "☀️";
+  }
+  60% {
+    content: "🐢";
+  }
+  80% {
+    content: "🦥";
+  }
+}
+/*
+Andra filer som skall med
+*/
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  margin: 1em auto;
+}
+
+body,
+sup {
+  font-size: 11px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
