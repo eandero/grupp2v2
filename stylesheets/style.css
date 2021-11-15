@@ -67,9 +67,10 @@ nav {
 }
 
 .closeicon {
-  width: 15px;
-  height: 15px;
-  background-color: red;
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  pointer-events: none;
 }
 
 /* Changed the breakpoint (for now) to 990 because that's when

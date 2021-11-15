@@ -5,10 +5,10 @@
       <title> Logotype </title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="stylesheets/style.css">
 
       <!---stuff-->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     </head>
     <body>
@@ -19,7 +19,9 @@
 
             <a class="navbar-brand" id="logotype" href="#">Logotype</a>
             <button id="hamburgerbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span id="buttonicon" class="navbar-toggler-icon"></span>
+              <span id="buttonicon" class="navbar-toggler-icon">
+
+              </span>
             </button>
 
           <!-- /Logotype -->
@@ -158,6 +160,7 @@
 
       var togglefun = true;
 
+/*
       function toggleHamburger() {
         var element = document.getElementById("buttonicon");
 
@@ -173,7 +176,25 @@
         }
 
       }
+*/
 
+      function toggleHamburger() {
+        var element = document.getElementById("buttonicon");
+
+
+        if(togglefun){
+          element.classList.remove("navbar-toggler-icon");
+          element.innerHTML = '<img class="closeicon" src="https://cdn.iconscout.com/icon/free/png-256/close-1912235-1617704.png">';
+          //element.classList.add("closeicon");
+          togglefun = false;
+        } else {
+          //element.classList.remove("closeicon");
+          element.innerHTML = "";
+          element.classList.add("navbar-toggler-icon");
+          togglefun = true;
+        }
+
+      }
       var myButton = document.getElementById("hamburgerbutton");
 
       myButton.addEventListener("click", toggleHamburger);
