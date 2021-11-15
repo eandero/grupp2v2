@@ -70,6 +70,14 @@ nav {
 	border-radius: 15px;
 }
 
+#hamburgerbutton {
+	border: 0px;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
 .closeicon {
 	width: 30px;
 	height: 30px;
