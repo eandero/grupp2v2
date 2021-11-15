@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
     <head>
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -156,51 +156,9 @@
 
       </section>
 
-      <script>
-
-      var togglefun = true;
-
-/*
-      function toggleHamburger() {
-        var element = document.getElementById("buttonicon");
-
-
-        if(togglefun){
-          element.classList.remove("navbar-toggler-icon");
-          element.classList.add("closeicon");
-          togglefun = false;
-        } else {
-          element.classList.remove("closeicon");
-          element.classList.add("navbar-toggler-icon");
-          togglefun = true;
-        }
-
-      }
-*/
-
-      function toggleHamburger() {
-        var element = document.getElementById("buttonicon");
-
-
-        if(togglefun){
-          element.classList.remove("navbar-toggler-icon");
-          element.innerHTML = '<img class="closeicon" src="https://cdn.iconscout.com/icon/free/png-256/close-1912235-1617704.png">';
-          //element.classList.add("closeicon");
-          togglefun = false;
-        } else {
-          //element.classList.remove("closeicon");
-          element.innerHTML = "";
-          element.classList.add("navbar-toggler-icon");
-          togglefun = true;
-        }
-
-      }
-      var myButton = document.getElementById("hamburgerbutton");
-
-      myButton.addEventListener("click", toggleHamburger);
-      </script>
 
   <!-- Javascript -->
+  <script type="text/javascript" src="script/hamburgermenu.js"></script>
   <script type="text/javascript" src="script/adchange.js"></script>
   <!-- /Javascript -->
 
