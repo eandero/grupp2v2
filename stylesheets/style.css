@@ -98,7 +98,7 @@ main {
 }
 
 /*
-    Artikel sektioner
+    Aartikel sektioner
 */
 @media screen and (max-width: 768px) {
   .article-section-small {
@@ -107,7 +107,7 @@ main {
 }
 
 /*
-  Artiklar
+    Artiklar
 */
 article + article {
   margin-top: 0.75em;
@@ -137,11 +137,11 @@ article:hover img {
 }
 
 /*
-  Inställningar för artiklar med text overlay
+    Inställningar för artiklar med text overlay
 */
 article.article-with-text-overlay {
   /*
-      Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller 
+      Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller
       en sk figcaption, så lägger vi figcaption över bilden. Och artikeln måste ha klassen `article-with-text-overlay` för att detta skall funka :)
   */
 }
@@ -162,15 +162,11 @@ article.article-with-text-overlay figure figcaption {
   /* Black background with 0.5 opacity */
   color: #f1f1f1;
 }
-article.article-with-text-overlay figure figcaption::after {
-  position: absolute;
-  bottom: 0;
-  height: 30px;
-  content: "";
+article.article-with-text-overlay a {
+  text-align: right;
   display: block;
-  left: 0;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  margin-top: -14px;
 }
 article.article-with-text-overlay:hover figcaption {
   background-color: rgba(0, 0, 0, 0.6);

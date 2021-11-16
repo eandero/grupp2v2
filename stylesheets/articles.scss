@@ -1,15 +1,100 @@
-.articleContainer {
-  position: relative;
-  margin: 0 auto;
+/*
+    Aartikel sektioner
+*/
+.article-section-small {
+    @media screen and (max-width: 768px) {
+        margin-top: 0.75em;
+    }
 }
 
-.image-text-lm {
-  position: absolute;
-  top: 22%;
-//  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 95.5%;
-  padding: 20px;
-  margin: 0;
+
+/*
+    Artiklar
+*/
+// Standardinställningar för alla artiklar
+article {
+
+    // När ett article-element följer ett annat article element så vill vi ha lite marginal mellan dessa
+    & + article {
+        margin-top: 0.75em;
+    }
+
+    // Länk färg, dvs all text i en länk
+    a,
+    a:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    // Regler för alla figure element för artiklar
+    figure {
+        margin-bottom: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    // Regler för alla bilder i artiklar
+    img {
+        transition: all 250ms ease;
+        width: 100%;
+        height: auto;
+    }
+
+    // Standard för bild-texten
+    figcaption {
+        position: relative;
+        z-index: 1;
+        background-color: white;
+    }
+
+    // En effect när man har musen över
+    &:hover {
+        img {
+            opacity: 0.9;
+        }
+    }
+}
+
+/*
+    Inställningar för artiklar med text overlay
+*/
+article.article-with-text-overlay {
+    /*
+        Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller
+        en sk figcaption, så lägger vi figcaption över bilden. Och artikeln måste ha klassen `article-with-text-overlay` för att detta skall funka :)
+    */
+    figure {
+        // Här säger vi till bilden att aldrig bli för liten och skala innehållet så det alltid fyller upp om bilden måste krympa
+        img {
+            min-height: 240px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            transition: all 250ms ease;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-height: 80%;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+       }
+    }
+
+    a {
+      text-align: right;
+      display: block;
+      width: 100%;
+      margin-top: -14px;
+    }
+
+    // Lite mer effect när man har musen över
+    &:hover {
+        figcaption {
+            background-color: rgba(0, 0, 0, 0.6); /* Black background with 0.6 opacity */
+        }
+    }
 }
