@@ -13,7 +13,7 @@
 */
 // Standardinställningar för alla artiklar
 article {
-    
+
     // När ett article-element följer ett annat article element så vill vi ha lite marginal mellan dessa
     & + article {
         margin-top: 0.75em;
@@ -25,14 +25,14 @@ article {
         color: inherit;
         text-decoration: none;
     }
-    
+
     // Regler för alla figure element för artiklar
     figure {
         margin-bottom: 0;
         overflow: hidden;
         position: relative;
     }
-    
+
     // Regler för alla bilder i artiklar
     img {
         transition: all 250ms ease;
@@ -60,7 +60,7 @@ article {
 */
 article.article-with-text-overlay {
     /*
-        Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller 
+        Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller
         en sk figcaption, så lägger vi figcaption över bilden. Och artikeln måste ha klassen `article-with-text-overlay` för att detta skall funka :)
     */
     figure {
@@ -82,6 +82,7 @@ article.article-with-text-overlay {
             background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
             color: #f1f1f1;
 
+
             &::after {
                 position: absolute;
                 bottom: 0;
@@ -94,6 +95,7 @@ article.article-with-text-overlay {
             }
         }
     }
+}
 
     // Lite mer effect när man har musen över
     &:hover {
