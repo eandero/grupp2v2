@@ -109,7 +109,7 @@ hr {
 }
 
 /*
-    Aartikel sektioner
+    Article section
 */
 @media screen and (max-width: 768px) {
   .article-section-small {
@@ -118,7 +118,7 @@ hr {
 }
 
 /*
-    Artiklar
+    Articles
 */
 article + article {
   margin-top: 0.75em;
@@ -148,14 +148,8 @@ article:hover img {
 }
 
 /*
-    Inställningar för artiklar med text overlay
+    Articles with text overlay
 */
-article.article-with-text-overlay {
-  /*
-      Figure element låter oss knyta ihop en text med en bild, här ställer vi också in att när vi har en figure och den innehåller
-      en sk figcaption, så lägger vi figcaption över bilden. Och artikeln måste ha klassen `article-with-text-overlay` för att detta skall funka :)
-  */
-}
 article.article-with-text-overlay figure img {
   min-height: 240px;
   object-fit: cover;
