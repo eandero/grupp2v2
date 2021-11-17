@@ -89,6 +89,11 @@ article.article-with-text-overlay {
       display: block;
       width: 100%;
       margin-top: -14px;
+      padding-right: 10px;
+      background-image: url(../pic/Arrow.svg);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: auto 10px;
     }
 
     // Lite mer effect när man har musen över
