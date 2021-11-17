@@ -1,65 +1,31 @@
 @charset "UTF-8";
-/* Fanny & Emma styling
-
-// Font
-$font-size-1: 18px;
-$font-size-2: 15px;
-$font-size-3: 12px;
-
-// Colors
-$color-blue: #427C9E;
-$color-black: black;
-$color-white: white;
-
-nav {
-    box-shadow: 3px 3px 3px 1px lightgrey;
-
-  ul {
-    margin: 10;
-    padding: 10;
-    list-style: none;
-    background-color: $color-white;
-    overflow: auto;
-    display: flex;
-    position: sticky;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    display: block;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-    font-style: normal;
-    color: Black;
-  }
+.has-search .form-control-feedback, #logotype {
+  position: absolute;
 }
-*/
+
 nav {
   box-shadow: 0px 3px 5px #888888;
   margin: 0px -20px 0px -20px;
 }
 
 #logotype {
-  position: absolute;
   color: #3766a1;
   font-size: 28px;
   margin-left: 25px;
 }
 
 #menulinks {
-  margin-left: 16%;
+  margin-left: 20.5%;
 }
 
 .nav-item {
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 14px;
 }
 
 #searchbar {
-  margin-right: 17%;
+  margin-right: 20.5%;
 }
 
 #searchinput {
@@ -105,7 +71,6 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
 }
 
 .has-search .form-control-feedback {
-  position: absolute;
   z-index: 2;
   display: block;
   width: 2.375rem;
