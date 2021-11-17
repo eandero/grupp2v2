@@ -159,7 +159,7 @@ article.article-with-text-overlay figure figcaption {
   width: 100%;
   max-height: 80%;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   /* Black background with 0.5 opacity */
   color: #f1f1f1;
 }
@@ -170,7 +170,7 @@ article.article-with-text-overlay a {
   margin-top: -14px;
   padding-right: 47px;
   padding-bottom: 10px;
-  background-image: url(../pic/Arrow.svg);
+  background-image: url(../images/Arrow.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto 10px;
