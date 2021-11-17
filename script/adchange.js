@@ -11,7 +11,7 @@ function randomAd() {
   const ad = ads[Math.floor(Math.random()*ads.length)];
 
   //random ad is added in an img element within the id="bannerAd" section element
-  document.getElementById("bannerAd").innerHTML = '<img src="pic/'+ad+'" width="100%" height="auto"></img>';
+  document.getElementById("bannerAd").innerHTML = '<a href="#"><img alt="Delta Air Lines - Get your seats!" src="images/'+ad+'" width="100%" height="auto"></img></a>';
 }
 
 //When the id="bannerAd" section element loads the function is run to load an ad
