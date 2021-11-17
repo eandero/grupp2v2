@@ -1,0 +1,12 @@
+/* Columns disapear in mobile view*/
+.colLeft{
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.colRight {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}

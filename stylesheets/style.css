@@ -95,6 +95,19 @@ hr {
   opacity: 1;
 }
 
+/* Columns disapear in mobile view*/
+@media screen and (max-width: 768px) {
+  .colLeft {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .colRight {
+    display: none;
+  }
+}
+
 /*
     Aartikel sektioner
 */
