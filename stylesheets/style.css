@@ -122,7 +122,10 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
 */
 main {
   padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+hr {
+  margin: 0.5 em auto;
 }
 
 /*
