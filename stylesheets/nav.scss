@@ -1,0 +1,98 @@
+//Variables = VG-critera
+//Percentage to match the bootstrap responsiveness
+$navOuterMargin: 20.5%;
+
+//Extend = VG-critera
+%position-absolute{
+	position: absolute;
+}
+
+//Styles the navbar
+nav {
+	box-shadow: 0px 3px 5px #888888;
+  margin: 0px -20px 0px -20px;
+}
+
+//Logotype needs to absolute for .nav-item to position correctly
+#logotype {
+	@extend %position-absolute;
+	color: #3766a1;
+	font-size: 28px;
+	margin-left: 25px;
+}
+
+#menulinks {
+	//Percentage to match the bootstrap responsiveness
+	margin-left: $navOuterMargin;
+}
+
+//nav-item styles the menu links relates to each other and the font-style
+.nav-item {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 14px;
+}
+
+#searchbar {
+	//Percentage to match the bootstrap responsiveness
+	margin-right: $navOuterMargin;
+}
+
+#searchinput {
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+#hamburgerbutton {
+	border: 0px;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.closeicon {
+	width: 30px;
+	height: 30px;
+	margin: 0px;
+	pointer-events:none;
+}
+
+/* Changed the breakpoint (for now) to 990 because that's when
+the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: 990px) {
+//@media only screen and (max-width: 1150px) {
+  /* For mobile phones: */
+  #searchbar {
+		display: none;
+	}
+
+	#logotype {
+		position: relative;
+		margin-left: 10px;
+	}
+
+	#menulinks {
+		margin-left: 0px;
+	}
+
+
+}
+
+.has-search .form-control {
+padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+@extend %position-absolute;
+z-index: 2;
+display: block;
+width: 2.375rem;
+height: 2.375rem;
+line-height: 2.375rem;
+text-align: center;
+pointer-events: none;
+/*background-image: url("searchicon.png");
+background-size: cover;*/
+}

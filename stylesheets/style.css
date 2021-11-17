@@ -1,0 +1,224 @@
+.has-search .form-control-feedback, #logotype {
+  position: absolute;
+}
+
+nav {
+  box-shadow: 0px 3px 5px #888888;
+  margin: 0px -20px 0px -20px;
+}
+
+#logotype {
+  color: #3766a1;
+  font-size: 28px;
+  margin-left: 25px;
+}
+
+#menulinks {
+  margin-left: 20.5%;
+}
+
+.nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+#searchbar {
+  margin-right: 20.5%;
+}
+
+#searchinput {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+#hamburgerbutton {
+  border: 0px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.closeicon {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  pointer-events: none;
+}
+
+/* Changed the breakpoint (for now) to 990 because that's when
+the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: 990px) {
+  /* For mobile phones: */
+  #searchbar {
+    display: none;
+  }
+
+  #logotype {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  #menulinks {
+    margin-left: 0px;
+  }
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  /*background-image: url("searchicon.png");
+  background-size: cover;*/
+}
+
+main {
+  padding-top: 30px;
+}
+
+hr {
+  margin: 0.5 em;
+  color: black;
+  opacity: 1;
+}
+
+/* Columns disapear in mobile view*/
+@media screen and (max-width: 768px) {
+  .colLeft {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .colRight {
+    display: none;
+  }
+}
+
+/*
+    Article section
+*/
+@media screen and (max-width: 768px) {
+  .article-section-small {
+    margin-top: 0.75em;
+  }
+}
+
+/*
+    Articles
+*/
+article + article {
+  margin-top: 0.75em;
+}
+article a,
+article a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+article figure {
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+article img {
+  transition: all 250ms ease;
+  width: 100%;
+  height: auto;
+}
+article figcaption {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+article:hover img {
+  opacity: 0.9;
+}
+
+/*
+    Articles with text overlay
+*/
+article.article-with-text-overlay figure img {
+  min-height: 240px;
+  object-fit: cover;
+}
+article.article-with-text-overlay figure figcaption {
+  transition: all 250ms ease;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+}
+article.article-with-text-overlay a {
+  text-align: right;
+  display: block;
+  width: 100%;
+  margin-top: -14px;
+  padding-right: 47px;
+  padding-bottom: 10px;
+  background-image: url(../images/Arrow.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: auto 10px;
+}
+article.article-with-text-overlay:hover figcaption {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black background with 0.6 opacity */
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  margin: 1em auto;
+}
+
+body,
+sup {
+  font-size: 11px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
