@@ -195,7 +195,8 @@ article.article-with-text-overlay a {
   display: block;
   width: 100%;
   margin-top: -14px;
-  padding-right: 10px;
+  padding-right: 47px;
+  padding-bottom: 10px;
   background-image: url(../pic/Arrow.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
