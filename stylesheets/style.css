@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .has-search .form-control-feedback, #logotype {
   position: absolute;
 }
@@ -82,9 +81,6 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
   background-size: cover;*/
 }
 
-/*
-    Inställningar för main
-*/
 main {
   padding-top: 30px;
 }
