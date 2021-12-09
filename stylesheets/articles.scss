@@ -7,7 +7,6 @@
     }
 }
 
-
 /*
     Articles
 */
@@ -56,7 +55,6 @@ article.article-with-text-overlay {
     
     figure {
         img {
-            min-height: 240px;
             object-fit: cover;
         }
 
@@ -90,6 +88,18 @@ article.article-with-text-overlay {
     &:hover {
         figcaption {
             background-color: rgba(0, 0, 0, 0.6); /* Black background with 0.6 opacity */
+        }
+    }
+}
+
+@media (max-width: 667px){
+    article{
+        .largeImage {
+            height: 190px !important;
+        }
+
+        .mediumImage {
+            height: 150px !important;
         }
     }
 }

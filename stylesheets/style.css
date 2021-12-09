@@ -147,7 +147,6 @@ article:hover img {
     Articles with text overlay
 */
 article.article-with-text-overlay figure img {
-  min-height: 240px;
   object-fit: cover;
 }
 article.article-with-text-overlay figure figcaption {
@@ -180,6 +179,14 @@ article.article-with-text-overlay:hover figcaption {
   /* Black background with 0.6 opacity */
 }
 
+@media (max-width: 667px) {
+  article .largeImage {
+    height: 190px !important;
+  }
+  article .mediumImage {
+    height: 150px !important;
+  }
+}
 html,
 body {
   overflow-x: hidden;
