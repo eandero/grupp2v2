@@ -54,6 +54,10 @@ article {
 article.article-with-text-overlay {
     
     figure {
+        .mediumImage {
+            min-height: 240px;
+        }
+
         img {
             object-fit: cover;
         }
@@ -100,6 +104,33 @@ article.article-with-text-overlay {
 
         .mediumImage {
             height: 150px !important;
+            min-height: 0px !important;
         }
+
+        .mobileText {
+            display: none !important;
+        }
+
+        h3 {
+            font-size: 15px !important; 
+        }
+
+        .mobileSub {
+            font-size: 10px !important;
+            margin-bottom: 0px; 
+        }
+
+        #large {
+            max-height: 50% !important;
+        }
+
+        #medium {
+            max-height: 45% !important;
+        }
+
+        .mobileView {
+            margin-top: -40px !important;
+        }
+       
     }
 }
