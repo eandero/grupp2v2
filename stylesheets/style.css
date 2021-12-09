@@ -64,6 +64,12 @@ the hamburger menu shows up, maybe 768 for iphone 7/6/8 is better though*/
   #menulinks {
     margin-left: 0px;
   }
+
+  .nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+  }
 }
 .has-search .form-control {
   padding-left: 2.375rem;
